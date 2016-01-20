@@ -1,0 +1,40 @@
+
+section{
+	width:804px;
+	height:400px;
+	margin: 0 auto;
+	background-color:#061886;
+	display:none;
+}
+section.activo{
+	display:block;
+}
+.relojes .reloj{
+	width:400px;
+	height:400px;
+}
+.relojes .reloj[data-piezas=blancas].derecha{
+	float:right;
+}
+audio{
+	display:none;
+}
+.sin-tiempo{
+    border: 1px solid white;
+    border-radius: 200px;
+    box-shadow: 0px 0px 20px red;
+}
+.tiempoRelojes div{
+	width: 250px;
+	color: white;
+	margin: 0px auto;
+	padding: 58px 0px;
+}
+.tiempoRelojes div button{
+	background-color: white;
+	border: medium none;
+	color: rgb(6, 24, 134);
+	font-weight: bold;
+	height: 30px;
+	font-size: 18px;
+}

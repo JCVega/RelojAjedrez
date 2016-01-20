@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Reloj Ajedrez para Fati</title>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="ajedrez.css">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<section class="tiempoRelojes activo">
+			<div >
+			    <label for="tiempoBlancas">Tiempo blancas</label><input id="tiempoBlancas" type="number" min=1 max=90><br/></br>
+				<label for="tiempoNegras">Tiempo negras </label><input id="tiempoNegras" type="number" min=1 max=90><br/></br>
+				<label for="blancasDerecha">¿Blancas a la derecha?</label><input id="blancasDerecha" type="checkbox" /></br></br>
+				<button onclick="botonComenzar()">Comenzar</button>
+			</div>
+		</section>
+		<section class="relojes">
+			<canvas class="reloj" data-piezas="blancas">
+			</canvas>
+			<canvas class="reloj" data-piezas="negras">
+			</canvas>
+			<audio id="cambio">
+				<source src="cambio.mp3" type="audio/mpeg">
+			</audio>
+			<audio id="termino" loop>
+				<source src="termino.mp3" type="audio/mpeg">
+			</audio>
+		</section>
+		<script src="jquery-1.12.0.min.js"></script>
+		<script src="ajedrez.js">
+		</script>
+	</body>
+</html>
